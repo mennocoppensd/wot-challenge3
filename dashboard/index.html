@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Dashboard</title>
+    <style>
+        .camera {
+            width: 45%;
+            margin: 2.5%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="camera">
+        <h2>Camera 1</h2>
+        <img id="camera1" src="" alt="Camera 1">
+    </div>
+    <div class="camera">
+        <h2>Camera 2</h2>
+        <img id="camera2" src="" alt="Camera 2">
+    </div>
+    <div class="camera">
+        <h2>Camera 3</h2>
+        <img id="camera3" src="" alt="Camera 3">
+    </div>
+    <div class="camera">
+        <h2>Camera 4</h2>
+        <img id="camera4" src="" alt="Camera 4">
+    </div>
+
+    <script>
+        // Update image sources with camera feed URLs
+        document.getElementById('camera1').src = 'http://<IP_ADDRESS_CAMERA_1>:<PORT>/stream'; // Replace with actual URLs
+        document.getElementById('camera2').src = 'http://<IP_ADDRESS_CAMERA_2>:<PORT>/stream';
+        document.getElementById('camera3').src = 'http://<IP_ADDRESS_CAMERA_3>:<PORT>/stream';
+        document.getElementById('camera4').src = 'http://<IP_ADDRESS_CAMERA_4>:<PORT>/stream';
+    </script>
+</body>
+</html>
